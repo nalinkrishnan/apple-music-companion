@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Top Songs View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="TopSongsViewController" customModule="soundtrack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEQ-0l-Rf8">
+                                <rect key="frame" x="170" y="149" width="74.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="204-X6-Zhv">
+                                <rect key="frame" x="170" y="297" width="74.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuI-Hb-Epe">
+                                <rect key="frame" x="170" y="611" width="74.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZd-P1-nCH">
+                                <rect key="frame" x="170" y="448" width="74.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zZd-P1-nCH" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="10.25" id="7bq-Uh-WqN"/>
+                            <constraint firstItem="204-X6-Zhv" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="C2v-JM-mUP"/>
+                            <constraint firstItem="XEQ-0l-Rf8" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="-288.75" id="LAR-I2-mMf"/>
+                            <constraint firstItem="wuI-Hb-Epe" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="173.25" id="StV-WU-KTq"/>
+                            <constraint firstItem="204-X6-Zhv" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="-140.75" id="evV-PX-3hN"/>
+                            <constraint firstItem="XEQ-0l-Rf8" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="h9k-a9-JRU"/>
+                            <constraint firstItem="zZd-P1-nCH" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ogN-pb-xYz"/>
+                            <constraint firstItem="wuI-Hb-Epe" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ybE-CR-Iov"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="TopAlbumsOutlet" destination="204-X6-Zhv" id="jPP-vN-8mF"/>
+                        <outlet property="TopArtistsOutlet" destination="zZd-P1-nCH" id="8xc-kk-2sC"/>
+                        <outlet property="TopGenresOutlet" destination="wuI-Hb-Epe" id="s3J-31-mbW"/>
+                        <outlet property="TopSongsOutlet" destination="XEQ-0l-Rf8" id="Fyd-uR-K9p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.6376811594203" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
